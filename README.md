@@ -12,3 +12,5 @@ Goals of this project:
 6. How does direction of travel, route, or location affect the headway and on-time performance?
 7. How does time of day or day of week affect headway and on-time performance? Can you detect an impact of school schedule on headway deviation (for certain routes and at certain times of day)?
 8. Does weather have any effect on headway or on-time performance? To help answer this question, the file bna_weather.csv contains historical weather data recorded at Nashville International Airport. 
+
+As far as hypotheses to test, I would start with looking at how layover at the beginning of a trip affects the headway on that trip, but all of the noted questions are valid and potentially interesting areas of investigation. [These other questions are "Is it of interest to look at how the dwell time along the route affects headway?" and "Is it of interest to look at layover vs. subsequent buses on the same route?"] Note that there is a difference between the scheduled layover (essentially, planned dwell in the schedule) and the actual dwell time.
