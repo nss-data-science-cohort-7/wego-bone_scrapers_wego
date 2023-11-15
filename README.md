@@ -43,3 +43,13 @@ Dwell Time vs. Headway
 Trip Duration vs. Headway
 
     Again, it looks like on average headway deviation is 0, but is there any difference in the variability?
+
+
+
+
+    Is there a relationship between headway and adjusted late or early count? Some headway devs are null, but the late count is 1.
+Adjusted late counts are derived from schedule adherence and do not relate directly to headway. Buses with adherence values of beyond negative 6 are generally considered late.
+Besides a bus being the first one on a route, are there any other reasons for a null value in the headway column?
+This value will be null for all records where Trip_Edge = 2 (last stop on trip). This is because we only track headway for departures, and the last stop is an arrival only.
+Is there an acceptable range for headway deviation?
+Our generally accepted range is 50% to 150% of the scheduled headway. For example, if scheduled headway is 10 minutes, a headway deviation in either direction of 5 minutes or less would be acceptable, even if it isn’t ideal.
